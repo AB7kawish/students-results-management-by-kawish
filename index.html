@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Result Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Student Result Management BY Abdul Nafi Kawish</h1>
+
+  <form id="result-form">
+    <input type="text" id="name" placeholder="Student Name" required>
+    <input type="number" id="subject1" placeholder="ENGLISH Marks" required>
+    <input type="number" id="subject2" placeholder="PYTHON Marks" required>
+    <input type="number" id="subject3" placeholder="PHP Marks" required>
+    <button type="submit">Add Result</button>
+  </form>
+
+  <h2>All Results</h2>
+  <table id="result-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Total</th>
+        <th>Average (%)</th>
+        <th>Grade</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h2>Statistics</h2>
+  <div id="stats">
+    <p><strong>Highest:</strong> <span id="highest"></span></p>
+    <p><strong>Lowest:</strong> <span id="lowest"></span></p>
+    <p><strong>Top 3 Students:</strong></p>
+    <ol id="top-three"></ol>
+  </div>
+
+  <script src="SCRIPT.JS"></script>
+</body>
+</html>
